@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 using System;
 using System.Formats.Asn1;
 using System.Reflection;
@@ -57,11 +57,4 @@ while(!Equals(newItem, "bye"))
         }
 
     }
-
-
-
 }
-Console.WriteLine("bye ass");
-
-
-    }}}

@@ -1,0 +1,52 @@
+if (userInput.ToLower() == "done ")
+                {
+                    //1. split the user input
+                    // check the length of the array is equal to 2
+                    // check first word is done
+                    // convert second word into an int
+                    // if cannot then exit (HOW TO DO THIS GOPAL)
+                    //else second word is already an int
+                    // pick out the task number x from the list of taks
+                    // then mark as done
+                    Console.WriteLine("Please enter the task number?");
+                    string numInput=null;
+                    numInput = Console.ReadLine();
+
+                    if (int.TryParse(numInput, out int d))      //int is number "d" task to be marked as complete
+                    {
+                        int x = d-1;
+                        listTask.ElementAt(x).markAsDone();
+                        Console.WriteLine("This task has been marked as complete.");
+                        Console.WriteLine($"[{listTask.ElementAt(x).getStatusIcon()}] {listTask.ElementAt(x).getDescription()}");
+                        
+                    }
+                }
+
+
+
+                   //Console.WriteLine("Please enter the task number?");
+                    //string numInput=null;
+                    //numInput = Console.ReadLine();
+
+                    //if (int.TryParse(numInput, out int d))      //int is number "d" task to be marked as complete
+                    //{
+                    //    int x = d-1;
+                    //    listTask.ElementAt(x).markAsDone();
+                    //    Console.WriteLine("This task has been marked as complete.");
+                    //    Console.WriteLine($"[{listTask.ElementAt(x).getStatusIcon()}] {listTask.ElementAt(x).getDescription()}");
+                        
+                    //}
+
+
+
+                    else 
+                {
+                    // create new task and add into list
+                    
+                    TaskD newTask = new TaskD(userInput); 
+                    //newTask.markAsDone();
+                    listTask.Add(newTask);
+                    Console.WriteLine(gotit);
+                    Console.WriteLine($"[{newTask.getStatusIcon()}] {userInput}");
+                    Console.WriteLine($"Great! You have a total of {listTask.Count} task(s) in the list.\n");
+                }

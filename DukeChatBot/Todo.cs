@@ -16,6 +16,10 @@ class Todo : TaskD
     //public string getCategory() {
     //    return Todo.Category;            // supposed to be get T,D, or E.
     //}
-
+    public override void PrintTask()
+    {
+        Console.WriteLine("Got it. I've added this task: ");
+        Console.WriteLine($"{Category} {getStatusIcon} {this.Description}");
+    }
 
 }

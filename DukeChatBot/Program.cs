@@ -14,7 +14,7 @@ namespace Boot.Y.Call
                 ChatbotGreet lesson = new ChatbotGreet();
                 TaskList myBootyListLesson = new TaskList();
                 myBootyListLesson.MyList(); 
-                lesson.GoodbyeForReal();
+                //lesson.GoodbyeForReal();
             }
 
     }   

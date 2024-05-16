@@ -16,6 +16,11 @@ class Event : TaskD
     //public string getCategory() {
     //    return Event.Category;            // supposed to be get T,D, or E.
     //}
-
+    public override void PrintTask()
+    {
+        Console.WriteLine("Got it. I've added this task: ");
+        Console.WriteLine($"{get.Category()}")
+        Console.WriteLine($"Great! You have a total of {listTask.Count} task(s) in the list.\n"); 
+    }
 
 }
